@@ -24,7 +24,9 @@ function viewCart() {
   if (cart.length === 0) {
     console.log('Your shopping cart is empty.')
   } else if (cart.length === 1) {
-    console.log(`In your cart, you have lemons at ${cart[0]}.`)
+    // access an object key in js
+    x = Object.keys(cart);
+    console.log(`In your cart, you have ${x} at ${x[0]}.`)
   }
 }
 
